@@ -17,16 +17,16 @@ oobabot = "^0.2.3"
 # security vulerabilities.
 # Remove this once text-generation-webui is updated to work with
 # newer versions of gradio.
-gradio = "~3.33.1"
+gradio = "4.26.*"
 # similarly, it needs to use version 0.2.5 of gradio-client
 # specifically.  Sigh.
-gradio-client = "0.2.5"
+gradio-client = "*"
 # we don't actually use fastapi, but it's a dependency of gradio
 # and if this isn't specified, poetry will install a very old version
 # (0.1.17) instead of the latest (0.99.1).  This older version won't
 # work with gradio.  Remove this when either gradio or poetry fixes
 # this issue.
-fastapi = "^0.99.1"
+fastapi = "*"
 
 [tool.poetry.scripts]
 oobabot-plugin = 'oobabot_plugin.install:main'
