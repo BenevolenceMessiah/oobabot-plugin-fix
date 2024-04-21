@@ -20,13 +20,13 @@ oobabot = "^0.2.3"
 gradio = "4.26.*"
 # similarly, it needs to use version 0.2.5 of gradio-client
 # specifically.  Sigh.
-gradio-client = "*"
+gradio-client = "0.15.1"
 # we don't actually use fastapi, but it's a dependency of gradio
 # and if this isn't specified, poetry will install a very old version
 # (0.1.17) instead of the latest (0.99.1).  This older version won't
 # work with gradio.  Remove this when either gradio or poetry fixes
 # this issue.
-fastapi = "*"
+fastapi = "0.110.2"
 
 [tool.poetry.scripts]
 oobabot-plugin = 'oobabot_plugin.install:main'
