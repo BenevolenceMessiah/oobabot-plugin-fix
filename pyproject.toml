@@ -9,7 +9,7 @@ repository = "https://github.com/BenevolenceMessiah/oobabot-plugin-fix.git"
 
 [tool.poetry.dependencies]
 python = "^3.8.1"
-oobabot = "^0.2.3"
+oobabot = "^0.2.3.1"
 # oobabot = { path = "../oobabot" }
 # text-generation-webui will now NOT work with gradio version
 # 0.34.0 or newer for some reason.  So we have to use the same
